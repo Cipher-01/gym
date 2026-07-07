@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Fit - Modern Gym Management System</title>
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Welcome to Apex Fit. Train Hard, Stay Fit, and Live Healthy. Explore our flexible membership plans, premium facilities, and professional training.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#/home" class="logo" id="gym-logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" width="30" height="30">
+                    <path fill="currentColor" d="M20.57 14.86L22 13.43L20.57 12L17 15.57L14.86 13.43L16.29 12L12 7.71L10.57 9.14L12 10.57L9.86 12.71L8.43 11.29L4.14 15.57L5.57 17L7 15.57L9.14 17.71L7.71 19.14L12 23.43L13.43 22L12 20.57L14.14 18.43L15.57 19.86L19.86 15.57L18.43 14.14L20.57 14.86M12 2L2 12H5V22H19V12H22L12 2Z" />
+                </svg>
+                <span>APEX<span>FIT</span></span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="nav" id="desktop-nav">
+                <a href="#/home" class="nav-link active" id="nav-home">Home</a>
+                <a href="#/packages" class="nav-link" id="nav-packages">Packages</a>
+                <a href="#/login" class="nav-link" id="nav-login">Login</a>
+                <a href="#/contact" class="nav-link" id="nav-contact">Contact</a>
+            </nav>
+
+            <!-- Mobile Navigation Toggle -->
+            <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+        <a href="#/home" class="mobile-nav-link active" id="mob-nav-home">Home</a>
+        <a href="#/packages" class="mobile-nav-link" id="mob-nav-packages">Packages</a>
+        <a href="#/login" class="mobile-nav-link" id="mob-nav-login">Login</a>
+        <a href="#/contact" class="mobile-nav-link" id="mob-nav-contact">Contact</a>
+    </div>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+        
+        <!-- 1. HOME SECTION -->
+        <section id="home" class="page-section active">
+            <div class="hero-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.85)), url('assets/hero.png');">
+                <div class="container hero-container">
+                    <h1 class="hero-title">Train Hard.<br><span class="highlight">Stay Fit.</span><br>Live Healthy.</h1>
+                    <p class="hero-subtitle">Elevate your fitness journey with state-of-the-art facilities, expert personal trainers, and a supportive community built to help you succeed.</p>
+                    <a href="#/packages" class="btn btn-primary btn-lg" id="hero-join-btn">Join Now</a>
+                </div>
+            </div>
+            
+            <div class="about-section py-100">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="section-tag">About Us</span>
+                        <h2 class="section-title">Why Choose Apex Fit?</h2>
+                        <p class="section-subtitle">We are dedicated to providing an premium fitness environment that inspires, empowers, and transforms lives.</p>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-card">
+                            <div class="about-icon">
+                                <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2M11 16.5H13V18H11V16.5M12.4 13.6C12.8 13.2 13 12.8 13 12.2V11H14V13.5H12V15H10V13.8L12.4 13.6M12 6C13.1 6 14 6.9 14 8C14 9.1 13.1 10 12 10C10.9 10 10 9.1 10 8S10.9 6 12 6Z"/>
+                                </svg>
+                            </div>
+                            <h3>Premium Facilities</h3>
+                            <p>Train with world-class cardio and strength equipment, clean locker rooms, and dedicated zones for boxing, yoga, and weightlifting.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-icon">
+                                <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2M12 6C13.66 6 15 7.34 15 9S13.66 12 12 12 9 10.66 9 9 10.34 6 12 6M12 20C9.03 20 6.47 18.5 5 16.18C5.03 13.83 9.77 12.5 12 12.5C14.22 12.5 18.97 13.83 19 16.18C17.53 18.5 14.97 20 12 20Z"/>
+                                </svg>
+                            </div>
+                            <h3>Expert Coaching</h3>
+                            <p>Our certified personal trainers will customize routines, track progress, and provide guidance to keep you safe and motivated.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-icon">
+                                <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                                    <path d="M12 3C17.5 3 22 7.5 22 13S17.5 23 12 23 2 18.5 2 13 6.5 3 12 3M12 5C7.58 5 4 8.58 4 13S7.58 21 12 21 20 17.42 20 13 16.42 5 12 5M12 7C14.21 7 16 8.79 16 11S14.21 15 12 15 8 13.21 8 11 9.79 7 12 7Z"/>
+                                </svg>
+                            </div>
+                            <h3>Flexible Schedules</h3>
+                            <p>With 24/7 access, group fitness schedules, and specialized workshops, you can easily fit workouts into your busy life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. MEMBERSHIP PACKAGES SECTION -->
+        <section id="packages" class="page-section">
+            <div class="py-100 container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Pricing Plans</span>
+                    <h2 class="section-title">Membership Packages</h2>
+                    <p class="section-subtitle">Choose the perfect plan that fits your goals and schedule. No hidden fees, instant activation.</p>
+                </div>
+                
+                <div class="packages-grid">
+                    <!-- Basic Plan -->
+                    <div class="package-card" id="package-basic">
+                        <div class="package-header">
+                            <h3>Basic</h3>
+                            <div class="price">
+                                <span class="currency">KSh</span>
+                                <span class="amount">2,000</span>
+                                <span class="period">/mo</span>
+                            </div>
+                        </div>
+                        <ul class="package-features">
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                                Gym Access
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                                Locker Access
+                            </li>
+                            <li class="disabled">
+                                <svg class="close-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                                Group Classes
+                            </li>
+                            <li class="disabled">
+                                <svg class="close-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                                Personal Trainer
+                            </li>
+                            <li class="disabled">
+                                <svg class="close-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                                Nutrition Advice
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline btn-full choose-plan-btn" data-plan="Basic" data-price="KSh 2,000">Choose Plan</button>
+                    </div>
+
+                    <!-- Standard Plan (Popular) -->
+                    <div class="package-card popular" id="package-standard">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="package-header">
+                            <h3>Standard</h3>
+                            <div class="price">
+                                <span class="currency">KSh</span>
+                                <span class="amount">4,000</span>
+                                <span class="period">/mo</span>
+                            </div>
+                        </div>
+                        <ul class="package-features">
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                                Gym Access
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                                Locker Access
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                                Group Classes
+                            </li>
+                            <li class="disabled">
+                                <svg class="close-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                                Personal Trainer
+                            </li>
+                            <li class="disabled">
+                                <svg class="close-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                                Nutrition Advice
+                            </li>
+                        </ul>
+                        <button class="btn btn-primary btn-full choose-plan-btn" data-plan="Standard" data-price="KSh 4,000">Choose Plan</button>
+                    </div>
+
+                    <!-- Premium Plan -->
+                    <div class="package-card" id="package-premium">
+                        <div class="package-header">
+                            <h3>Premium</h3>
+                            <div class="price">
+                                <span class="currency">KSh</span>
+                                <span class="amount">6,500</span>
+                                <span class="period">/mo</span>
+                            </div>
+                        </div>
+                        <ul class="package-features">
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                                Unlimited Gym Access
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                                Locker Access
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                                Group Classes
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                                Personal Trainer
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                                Nutrition Advice
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline btn-full choose-plan-btn" data-plan="Premium" data-price="KSh 6,500">Choose Plan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. LOGIN SECTION -->
+        <section id="login" class="page-section">
+            <div class="py-100 container form-container-wrapper">
+                <div class="form-card" id="login-card">
+                    <div class="form-header text-center">
+                        <h2>Welcome Back</h2>
+                        <p>Login to manage your fitness dashboard</p>
+                    </div>
+                    
+                    <!-- Alert Message Bar -->
+                    <div class="alert-box alert-danger hidden" id="login-error">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                        </svg>
+                        <span id="login-error-msg">Email and password are required.</span>
+                    </div>
+
+                    <form id="login-form" novalidate>
+                        <div class="form-group">
+                            <label for="login-email">Email Address</label>
+                            <input type="email" id="login-email" class="form-control" placeholder="name@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" class="form-control" placeholder="••••••••" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full btn-lg" id="login-btn">Log In</button>
+                    </form>
+                    <div class="form-footer text-center">
+                        <p>Demo accounts: Any non-empty email & password allowed!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. DASHBOARD SECTION -->
+        <section id="dashboard" class="page-section">
+            <div class="py-100 container dashboard-wrapper">
+                <div class="dashboard-card">
+                    <div class="dashboard-header">
+                        <div>
+                            <span class="badge badge-success">Active Member</span>
+                            <h2 class="welcome-text">Welcome back, <span id="user-email-display">member@apexfit.com</span>!</h2>
+                        </div>
+                        <button class="btn btn-outline" id="logout-btn">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" class="logout-icon-svg">
+                                <path d="M16 17v-3H9v-4h7V7l5 5-5 5M14 2a2 2 0 0 1 2 2v2h-2V4H4v16h10v-2h2v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10z"/>
+                            </svg>
+                            Logout
+                        </button>
+                    </div>
+                    
+                    <div class="dashboard-grid">
+                        <div class="dashboard-stats-card">
+                            <div class="stats-icon">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-2 10H7v-2h10v2z"/>
+                                </svg>
+                            </div>
+                            <div class="stats-info">
+                                <span class="stats-label">Selected Membership</span>
+                                <span class="stats-value" id="dashboard-package-name">Standard Plan</span>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-stats-card">
+                            <div class="stats-icon">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                                </svg>
+                            </div>
+                            <div class="stats-info">
+                                <span class="stats-label">Membership Status</span>
+                                <span class="stats-value text-success" id="dashboard-membership-status">Active</span>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-stats-card">
+                            <div class="stats-icon">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                                </svg>
+                            </div>
+                            <div class="stats-info">
+                                <span class="stats-label">Quick Actions</span>
+                                <a href="#/packages" class="stats-value-link">Upgrade Package →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-perks">
+                        <h3>Your Active Package Perks</h3>
+                        <ul id="dashboard-perks-list" class="perks-list">
+                            <!-- Perks dynamically injected -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CONTACT SECTION -->
+        <section id="contact" class="page-section">
+            <div class="py-100 container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Get in touch</span>
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-subtitle">Have any questions about packages, hours, or trainers? Reach out to us, and we'll reply shortly.</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="form-card" id="contact-card">
+                        <!-- Contact Success Alert -->
+                        <div class="alert-box alert-success hidden" id="contact-success">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                            </svg>
+                            <span>Thank you! Your message has been sent successfully.</span>
+                        </div>
+
+                        <div class="alert-box alert-danger hidden" id="contact-error">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                            </svg>
+                            <span>Please fill in all fields with valid information.</span>
+                        </div>
+
+                        <form id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="contact-name">Full Name</label>
+                                <input type="text" id="contact-name" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email Address</label>
+                                <input type="email" id="contact-email" class="form-control" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Message</label>
+                                <textarea id="contact-message" class="form-control" rows="5" placeholder="Tell us how we can help..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full btn-lg" id="contact-btn">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-panel">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>Our Location</h4>
+                                <p>Apex Tower, 5th Floor, Ngong Road<br>Nairobi, Kenya</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>Phone Number</h4>
+                                <p>+254 700 123 456<br>+254 799 654 321</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email Address</h4>
+                                <p>support@apexfit.com<br>info@apexfit.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm3.3 14.5L11 12.4V7h1.5v4.9l3.7 2.2-.7 1.4z"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>Working Hours</h4>
+                                <p>Mon - Fri: 5:00 AM - 10:00 PM<br>Sat - Sun: 6:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M20.57 14.86L22 13.43L20.57 12L17 15.57L14.86 13.43L16.29 12L12 7.71L10.57 9.14L12 10.57L9.86 12.71L8.43 11.29L4.14 15.57L5.57 17L7 15.57L9.14 17.71L7.71 19.14L12 23.43L13.43 22L12 20.57L14.14 18.43L15.57 19.86L19.86 15.57L18.43 14.14L20.57 14.86M12 2L2 12H5V22H19V12H22L12 2Z" />
+                    </svg>
+                    <span>APEX<span>FIT</span></span>
+                </div>
+                <p>Train Hard. Stay Fit. Live Healthy. Your health, our priority.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Navigation</h4>
+                <a href="#/home">Home</a>
+                <a href="#/packages">Membership Plans</a>
+                <a href="#/login">Client Login</a>
+                <a href="#/contact">Contact Us</a>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Our Journey</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 008.44-9.9c0-5.53-4.5-10.02-10-10.02z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m8.4 2.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9m0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.7 0-1.37-.2-1.95-.53v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.52 8.52 0 0 1-5.31 1.83c-.35 0-.69-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Apex Fit Gym. All Rights Reserved. Designed for visual excellence.</p>
+        </div>
+    </footer>
+
+    <!-- Core App JS -->
+    <script src="app.js"></script>
+</body>
+</html>
